@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {background-color: #f7f5f5;}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+header {
+    padding: 30px 0;
+}
+
+header > .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+    color: #535b6c;
+    font-size: 23px;
+    text-decoration: none;
+}
+
+nav.menu-desktop li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+nav.menu-desktop a {
+    color: #aab3c2;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+nav.menu-desktop a:hover {
+    text-decoration: underline;
+    color: #535b6c;
+}
+
+.social-media a {
+    color: #535b6c;
+    font-size: 22px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+section.topo {
+    margin: 30px 0;
+}
+
+.topo > .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topo .descricao {
+    width: 60%;
+}
+
+.topo .image {
+    width: 40%;
+}
+
+.descricao h3 {
+    color: #535b6c;
+}
+
+.descricao h1 {
+    margin: 20px 0;
+    color: #525dad;
+    font-size: 56px;
+}
+
+.descricao a{
+    border-radius: 4px;
+    background-color: #f75915;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 15px;
+    color: white;
+}
+
+.descricao h1 > span {
+    color: #f75915;
+}
+
+.descricao p {
+    color: #aab3c2;
+}
+
+.image img {
+    width: 100%;
+    max-width: 100%;
+}
+
+section.servicos {
+    margin: 40px 0;
+}
+
+.chamada-servicos {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.chamada-servicos h4 {
+    font-size: 16px;
+    color: #535b6c;
+}
+
+.chamada-servicos h1 {
+    font-size: 55px;
+    color: #525dad;
+}
+
+.descricao-servicos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-servicos{
+    width: 55%;
+}
+
+.img-servicos img{
+    max-width: 100%;
+}
+
+.detalhes-servicos {
+    padding: 30px;
+    width: 45%;
+}
+
+.detalhes-servicos h3 {
+    color: #535b6c;
+    font-size: 26px;
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+.detalhes-servicos p {
+    color: #9299a5;
+    font-size: 15px;
+}
+
+section.depoimentos {
+    margin: 30px 0;
+}
+
+section.depoimentos > .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.depoimentos .texto-depoimento{
+    width: 45%;
+}
+
+.depoimentos .img-depoimento{
+    width: 55%;
+}
+
+.texto-depoimento {
+    margin-top: 40px;
+    padding: 0 15px;
+}
+
+.texto-depoimento h3 {
+    color: #9299a5;
+    font-size: 25px;
+}
+
+.texto-depoimento h4 {
+    color: #9299a5;
+    margin-top: 8px;
+}
+
+.img-depoimento img {
+    max-width: 100%;
+}
+
+.img-showcase {
+    width: 100%;
+    text-align: center;
+}
+
+.img-showcase img {
+    max-width: 100%;
+}
+
+.formulario {
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+.formulario input[type=text],
+.formulario input[type=email]{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc; 
+    margin: 10px 0;
+    padding-left: 10px;
+}
+
+.formulario textarea{
+    width: 100%;
+    height: 120px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.formulario input[type=submit]{
+    padding: 10px 15px;
+    background: #f75915;
+    cursor: pointer;
+    border: 0;
+    color: white;
+    width: 100%;
+}
+
+footer{
+    text-align: center;
+    padding: 30px 0;
+    color: #535b6c;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+footer a {
+    margin: 10px;
+    color: #535b6c;
+}
+
+@media screen and (max-width: 768px){    
+.topo .descricao {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.topo .image {
+    width: 100%;
+    margin: 20px 0;
+
+}
+.img-servicos,
+.detalhes-servicos{
+    width: 100%;
+}
+
+.depoimentos {
+    text-align: center;
+}
+.depoimentos .texto-depoimento{
+    width: 100%;
+}
+
+.depoimentos .img-depoimento{
+    width: 100%;
+    margin: 20px 0;
+}
+}
+
+
+@media screen and (max-width: 600px){
+    .social-media{
+        display: none;
+    }
+
+    nav.menu-desktop li {
+        display: block;
+        margin: 8px 10px;
+    }
+}
